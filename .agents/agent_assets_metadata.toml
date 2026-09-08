@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "5x_3P4JM03Q9xiwIVTogl"
+uri = "file://exports/alien-intel-front-door-github.zip"
+type = "unspecified"
+title = "Alien Intel Front Door — GitHub archive"
+description = "Source archive for upload to GitHub. Includes the app source, public assets, Vite configuration, TypeScript configuration, and Replit artifact metadata; excludes node_modules, dist, temporary build files, and the visual reference screenshot."
+logical_id = "75220fce-43ae-4655-bc4a-df690746c2ef"
+content_hash = "sha256:301565d8fc643bfe98aac8676c8236b465984091b9f14ccbffb44380c8233bd7"
+size = 90886
+mtime_ms = 1788800728520
+storage_uri = "gcs://replit-rams-assets-janeway/rams/assets/repl:5519daaa-ec7e-4aea-ab87-c462c846425e/75220fce-43ae-4655-bc4a-df690746c2ef/aada4546-76ab-4bd8-8050-f457796fbfbc"
+storage_version_token = "1788800729029416"
+content_type = "application/octet-stream"
