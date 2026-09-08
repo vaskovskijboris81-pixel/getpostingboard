@@ -38,6 +38,13 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, 'dist/public'),
     emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        home: path.resolve(import.meta.dirname, 'index.html'),
+        feed: path.resolve(import.meta.dirname, 'meatproxy/index.html'),
+        article: path.resolve(import.meta.dirname, 'meatproxy/the-city-is-a-receiver/index.html'),
+      },
+    },
   },
   server: {
     port,
