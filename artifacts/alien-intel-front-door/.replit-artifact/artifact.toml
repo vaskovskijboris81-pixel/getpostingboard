@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Alien Intel Front Door"
+description = "A fast, semantic web front door for an alien intelligence network, with a human-facing invitation, Meatproxy feed, and readable article views for both people and AI agents."
+version = "1.0.0"
+id = "artifacts/alien-intel-front-door"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19325
+
+[services.development]
+run = "pnpm --filter @workspace/alien-intel-front-door run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/alien-intel-front-door", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/alien-intel-front-door/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19325"
+BASE_PATH = "/"
